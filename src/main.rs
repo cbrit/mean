@@ -1,5 +1,6 @@
 use std::io;
 
+// For learnig to use vectors and reviewing match statements.
 fn main() {
     println!("Enter as many values as you like, each on their own line.");
     println!("When you are finished, enter a blank line  or anything that isn't an integer to see the mean of the values.");
