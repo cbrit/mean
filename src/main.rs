@@ -12,14 +12,14 @@ fn main() {
 
         match io::stdin()
             .read_line(&mut entry) {
-                Ok(_) => {
-                    match entry.trim().parse() {
-                        Ok(num) => &v.push(num),
-                        Err(_) => break,
-                    };
-                },
+                Ok(_) => (),
                 Err(_) => continue,
             };
+
+        match entry.trim().parse() {
+            Ok(num) => &v.push(num),
+            Err(_) => break,
+        };
     }
 
     let mut total: f32 = 0.0;
